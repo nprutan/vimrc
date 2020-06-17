@@ -95,19 +95,18 @@ let g:ale_warn_about_trailing_whitespace = 0
 
 " Airline
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep  = ''
-let g:airline_right_sep = ''
 let g:airline#extensions#ale#enabled = 1
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
 let g:airline_theme='base16_gruvbox_dark_hard'
 let g:airline#extensions#fugitiveline#enabled = 1
 
+" Airline 
+" powerline symbols
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" powerline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -117,9 +116,6 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
-
-
-
 
 " Autoformat
 let g:formatters_python = ['black']
