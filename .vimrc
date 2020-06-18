@@ -1,5 +1,3 @@
-syntax on
-
 set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -25,7 +23,7 @@ set shortmess+=c
 set colorcolumn=88
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-:set number relativenumber
+set number relativenumber
 
 :augroup numbertoggle
 :  autocmd!
@@ -37,6 +35,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ycm-core/YouCompleteMe'
 Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'janko/vim-test'
@@ -48,7 +47,7 @@ Plug 'Chiel92/vim-autoformat'
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme jellybeans
 set background=dark
 
 if executable('rg')
@@ -98,7 +97,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
-let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_theme='owo'
 let g:airline#extensions#fugitiveline#enabled = 1
 
 " Airline 
